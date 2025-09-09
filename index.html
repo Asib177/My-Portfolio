@@ -590,6 +590,33 @@
       color: var(--primary);
     }
 
+    /* Success Message */
+    .success-message {
+      display: none;
+      background: rgba(0, 255, 204, 0.2);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .success-message.show {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
     /* Footer */
     footer {
       background: var(--darker);
@@ -688,8 +715,8 @@
     }
 
     .logo img {
-    width: 80px;
-    height: auto;
+      width: 80px;
+      height: auto;
     }
   </style>
 </head>
@@ -711,14 +738,12 @@
       </nav>
     </div>
   </header>
-
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-bg"></div>
     <div class="container hero-content fade-in">
       <h1>Hi, I'm Rakibul Asib</h1>
       <h2 class="hero-subtitle">Game Developer</h2>
-
       <div class="hero-skills">
         <div class="skill-category">
           <h3>Game Development Skills:</h3>
@@ -735,31 +760,26 @@
           </ul>
         </div>
       </div>
-
       <div class="cta-buttons">
         <a href="#projects" class="btn">View My Work</a>
         <a href="#contact" class="btn btn-outline">Contact Me</a>
       </div>
     </div>
   </section>
-
   <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="container">
       <h2 class="section-title">My Projects</h2>
-
       <div class="project-filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="game">Games</button>
         <button class="filter-btn" data-filter="courses">Courses</button>
         <button class="filter-btn" data-filter="certificates">Certificates</button>
       </div>
-
       <div class="projects-grid">
         <!-- Project 1 -->
         <div class="project-card" data-category="game">
-          <div class="project-img"
-            style="background-image: url('skyfall.png')">
+          <div class="project-img" style="background-image: url('skyfall.png')">
             <div class="project-overlay">
               <div class="play-btn">
                 <a href="https://www.youtube.com/watch?v=ljziwSHQsjM" target="_blank">
@@ -767,7 +787,6 @@
                 </a>
               </div>
             </div>
-
           </div>
           <div class="project-info">
             <h3 class="project-title">Skyfall Battle</h3>
@@ -777,19 +796,21 @@
               <span class="tag">Action</span>
               <span class="tag">2D</span>
             </div>
-            <p class="project-desc">Step into the action with Skyfall Battle, a 2D Unity game showcasing dynamic player combat, enemy AI, and engaging level
-            progression.</p>
+            <p class="project-desc">Step into the action with Skyfall Battle, a 2D Unity game showcasing dynamic player
+              combat, enemy AI, and engaging level
+              progression.</p>
             <div class="project-links">
-              <a href="https://www.youtube.com/watch?v=ljziwSHQsjM" class="project-link"><i class="fab fa-youtube"></i> Youtube</a>
-              <a href="https://asib177.itch.io/skyfall-battle" class="project-link"><img src="https://img.shields.io/badge/itch.io-FA5C5C?logo=itch.io&logoColor=white" alt="itch.io" style="height:20px;"></a>
+              <a href="https://www.youtube.com/watch?v=ljziwSHQsjM" class="project-link"><i class="fab fa-youtube"></i>
+                Youtube</a>
+              <a href="https://asib177.itch.io/skyfall-battle" class="project-link"><img
+                  src="https://img.shields.io/badge/itch.io-FA5C5C?logo=itch.io&logoColor=white" alt="itch.io"
+                  style="height:20px;"></a>
             </div>
           </div>
         </div>
-
         <!-- Project 2 -->
         <div class="project-card" data-category="game">
-          <div class="project-img"
-            style="background-image: url('carrythecar.png')">
+          <div class="project-img" style="background-image: url('carrythecar.png')">
             <div class="project-overlay">
               <div class="play-btn">
                 <a href="https://www.youtube.com/watch?v=LCUFmiP_27Y" target="_blank">
@@ -805,20 +826,20 @@
               <span class="tag">Java</span>
               <span class="tag">OOP</span>
             </div>
-            <p class="project-desc">Carry The Car, a JavaFX-based game project I developed as part of my journey in game development and object-oriented
-            programming.</p>
+            <p class="project-desc">Carry The Car, a JavaFX-based game project I developed as part of my journey in game
+              development and object-oriented
+              programming.</p>
             <div class="project-links">
-              <a href="https://www.youtube.com/watch?v=LCUFmiP_27Y" class="project-link"><i class="fab fa-youtube"></i> Youtube</a>
+              <a href="https://www.youtube.com/watch?v=LCUFmiP_27Y" class="project-link"><i class="fab fa-youtube"></i>
+                Youtube</a>
               <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Design</a>
               <a href="#" class="project-link"><i class="fas fa-download"></i> Download</a> -->
             </div>
           </div>
         </div>
-
         <!-- Project 3 -->
         <div class="project-card" data-category="certificates">
-          <div class="project-img"
-            style="background-image: url('game_theory_I.png')">
+          <div class="project-img" style="background-image: url('game_theory_I.png')">
             <!-- <div class="project-overlay">
               <div class="play-btn">
                 <i class="fas fa-play"></i>
@@ -832,18 +853,18 @@
               <!-- <span class="tag">YouTube</span>
               <span class="tag">Unreal</span> -->
             </div>
-            <p class="project-desc">An online non-credit course authorized by Standford University and The University of British Columbia and offered through Coursera.</p>
+            <p class="project-desc">An online non-credit course authorized by Standford University and The University of
+              British Columbia and offered through Coursera.</p>
             <div class="project-links">
               <!-- <a href="#" class="project-link"><i class="fab fa-youtube"></i> Watch Video</a> -->
-              <a href="https://coursera.org/share/d10808c52c2ec7e4d93bf3b387bbd101" class="project-link"><i class="fas fa-file-alt"></i>View Certificate</a>
+              <a href="https://coursera.org/share/d10808c52c2ec7e4d93bf3b387bbd101" class="project-link"><i
+                  class="fas fa-file-alt"></i>View Certificate</a>
             </div>
           </div>
         </div>
-
         <!-- Project 4 -->
         <div class="project-card" data-category="courses">
-          <div class="project-img"
-            style="background-image: url('game-design-and-development.png')">
+          <div class="project-img" style="background-image: url('game-design-and-development.png')">
             <!-- <div class="project-overlay">
               <div class="play-btn">
                 <i class="fas fa-play"></i>
@@ -860,10 +881,12 @@
               Course: CSE 4485 - Game Design and Development<br>
               Institution: United International University (UIU)<br>
               Credit Hours: 3.00<br><br>
-              
+
               Key Topics:<br>
-              Game history & design | Character modelling & animation | Programming fundamentals | 3D virtual worlds | Game engines & debugging | AI in games | Multiplayer & networking | Applications (simulation, animation, etc.)<br><br>
-              
+              Game history & design | Character modelling & animation | Programming fundamentals | 3D virtual worlds |
+              Game engines & debugging | AI in games | Multiplayer & networking | Applications (simulation, animation,
+              etc.)<br><br>
+
               My Outcomes:<br>
               ✅ Learned game architecture, design process, and AI concepts<br>
               ✅ Gained experience with Unity, C#, and OOP principles<br>
@@ -875,7 +898,6 @@
             </div> -->
           </div>
         </div>
-
         <!-- Project 5 -->
         <!-- <div class="project-card" data-category="design">
           <div class="project-img"
@@ -901,7 +923,6 @@
             </div>
           </div>
         </div> -->
-
         <!-- Project 6 -->
         <!-- <div class="project-card" data-category="video">
           <div class="project-img"
@@ -930,7 +951,6 @@
       </div>
     </div>
   </section>
-
   <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
@@ -941,14 +961,22 @@
         </div>
         <div class="about-content">
           <!-- <h2>Asib - Game Developer</h2> -->
-          <p>I am Asib, a university student. Back in my childhood in 2011, I saw that the hero of the movie <a href="https://www.youtube.com/watch?v=t7ekvJ4oRwY" target="_blank" rel="noopener">Mr. Perfect</a>, <a href="https://www.instagram.com/actorprabhas/" target="_blank" rel="noopener"> actor
-            Prabhas</a>, was a video game developer. At that moment, a question arose in my mind — how are games made? Since then, I
-          have dreamed of becoming a game developer when I grow up. This became my dream and passion. I am currently learning
-          Unity game development and working on problem-solving. Alongside Unity, I also have a basic understanding of Unreal and
-          Godot.</p>
-          <p>I have developed projects that include player health systems, scoring, bullet shooting mechanics, enemy AI behaviors,
-          level progression, and custom save/load systems using binary serialization. My focus is on building games that are not only fun to play but also optimized for performance and smooth user experience.</p>
-          <p>My dream is to achieve global success in the game industry, creating games that players around the world will remember and love.</p>
+          <p>I am Asib, a university student. Back in my childhood in 2011, I saw that the hero of the movie <a
+              href="https://www.youtube.com/watch?v=t7ekvJ4oRwY" target="_blank" rel="noopener">Mr. Perfect</a>, <a
+              href="https://www.instagram.com/actorprabhas/" target="_blank" rel="noopener"> actor
+              Prabhas</a>, was a video game developer. At that moment, a question arose in my mind — how are games made?
+            Since then, I
+            have dreamed of becoming a game developer when I grow up. This became my dream and passion. I am currently
+            learning
+            Unity game development and working on problem-solving. Alongside Unity, I also have a basic understanding of
+            Unreal and
+            Godot.</p>
+          <p>I have developed projects that include player health systems, scoring, bullet shooting mechanics, enemy AI
+            behaviors,
+            level progression, and custom save/load systems using binary serialization. My focus is on building games
+            that are not only fun to play but also optimized for performance and smooth user experience.</p>
+          <p>My dream is to achieve global success in the game industry, creating games that players around the world
+            will remember and love.</p>
           <!--<div class="skills">
             <h3>My Skills</h3>
             <div class="skill-bars">
@@ -990,7 +1018,6 @@
               </div>
             </div>
           </div>-->
-
           <div class="coding-profiles">
             <h3>Coding Profiles</h3>
             <div class="coding-links">
@@ -1009,7 +1036,6 @@
       </div>
     </div>
   </section>
-
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
@@ -1018,23 +1044,25 @@
         <form class="contact-form" id="contactForm">
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" class="form-control" required>
+            <input type="text" id="name" name="name" class="form-control" required>
           </div>
           <div class="form-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" class="form-control" required>
+            <input type="email" id="email" name="email" class="form-control" required>
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" class="form-control" required>
+            <input type="text" id="subject" name="subject" class="form-control" required>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" class="form-control" required></textarea>
+            <textarea id="message" name="message" class="form-control" required></textarea>
           </div>
           <button type="submit" class="btn">Send Message</button>
+          <div id="successMessage" class="success-message">
+            Thank you! Your message has been sent successfully.
+          </div>
         </form>
-
         <div class="contact-info">
           <div class="contact-item">
             <div class="contact-icon">
@@ -1068,7 +1096,6 @@
       </div>
     </div>
   </section>
-
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -1088,7 +1115,15 @@
     </div>
   </footer>
 
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   <script>
+    // Initialize EmailJS with your public key
+    (function () {
+      emailjs.init("7G_LNagOU8U00VpMx");
+    })();
+
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -1098,20 +1133,16 @@
         });
       });
     });
-
     // Project filtering
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
-
     filterButtons.forEach(button => {
       button.addEventListener('click', () => {
         // Remove active class from all buttons
         filterButtons.forEach(btn => btn.classList.remove('active'));
         // Add active class to clicked button
         button.classList.add('active');
-
         const filter = button.getAttribute('data-filter');
-
         projectCards.forEach(card => {
           if (filter === 'all' || card.getAttribute('data-category') === filter) {
             card.style.display = 'block';
@@ -1129,17 +1160,14 @@
         });
       });
     });
-
     // Animate skill bars when in viewport
     const skillBars = document.querySelectorAll('.skill-level');
-
     const animateSkillBars = () => {
       skillBars.forEach(bar => {
         const width = bar.getAttribute('data-width');
         bar.style.width = width;
       });
     };
-
     // Intersection Observer for skill bars animation
     const skillsSection = document.querySelector('.skills');
     const observer = new IntersectionObserver((entries) => {
@@ -1150,34 +1178,65 @@
         }
       });
     }, { threshold: 0.5 });
-
     if (skillsSection) {
       observer.observe(skillsSection);
     }
-
-    // Contact form submission
+    // Contact form submission with EmailJS
     const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
 
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // Get form values
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const subject = document.getElementById('subject').value;
-      const message = document.getElementById('message').value;
+      // Show loading state
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
 
-      // Here you would normally send the form data to a server
-      // For this example, we'll just show a success message
-      alert(`Thank you, ${name}! Your message has been sent successfully.`);
+      // Send email using EmailJS
+      emailjs.sendForm('service_53hcp8q', 'template_cbup67y', contactForm)
+        .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
 
-      // Reset form
-      contactForm.reset();
+          // Show success message
+          successMessage.classList.add('show');
+
+          // Reset form
+          contactForm.reset();
+
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            successMessage.classList.remove('show');
+          }, 5000);
+        }, function (error) {
+          console.log('FAILED...', error);
+
+          // Show error message
+          successMessage.textContent = 'Oops! Something went wrong. Please try again later.';
+          successMessage.style.background = 'rgba(255, 0, 0, 0.2)';
+          successMessage.style.borderColor = '#ff0066';
+          successMessage.style.color = '#ff0066';
+          successMessage.classList.add('show');
+
+          // Hide error message after 5 seconds
+          setTimeout(() => {
+            successMessage.classList.remove('show');
+            // Reset to original success message
+            successMessage.textContent = 'Thank you! Your message has been sent successfully.';
+            successMessage.style.background = 'rgba(0, 255, 204, 0.2)';
+            successMessage.style.borderColor = 'var(--primary)';
+            successMessage.style.color = 'var(--primary)';
+          }, 5000);
+        })
+        .finally(() => {
+          // Reset button state
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        });
     });
-
     // Add fade-in animation to elements when they come into view
     const fadeElements = document.querySelectorAll('.fade-in');
-
     const fadeObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1187,7 +1246,6 @@
         }
       });
     }, { threshold: 0.1 });
-
     fadeElements.forEach(element => {
       element.style.opacity = '0';
       element.style.transform = 'translateY(30px)';
